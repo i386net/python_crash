@@ -33,3 +33,20 @@ python_themes = {
 for p in python_themes.items():
     print(p[0].capitalize() + ':')
     print('\t\t' + p[1].capitalize())
+
+# sorting dictionaty keys
+
+test_dict = {
+    'a': 1, 'b': 2, 'd': 3, 'c': 4
+}
+
+for key in test_dict.keys():
+    print(key)
+# print sorted keys
+for key in sorted(test_dict.keys()):
+    print(key)
+# print sorted keys
+print(*sorted(test_dict.keys()))
+
+# 6-4
+

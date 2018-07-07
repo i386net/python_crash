@@ -1,2 +1,1 @@
-# python_crash
-test git2go
+# python_crash_course
