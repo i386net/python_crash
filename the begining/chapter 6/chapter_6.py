@@ -164,3 +164,28 @@ for name, numbers in favorite_numbers.items():
     print(name.title() + ':')
     print(*numbers)
 
+# 6-11
+cities = {
+    'santiago': {
+        'country': 'chile',
+        'population': 6158080,
+        'nearby mountains': 'andes',
+        },
+    'talkeetna': {
+        'country': 'alaska',
+        'population': 876,
+        'nearby mountains': 'alaska range',
+        },
+    'kathmandu': {
+        'country': 'nepal',
+        'population': 1003285,
+        'nearby mountains': 'himilaya',
+        }
+    }
+for city, city_info in cities.items():
+    city_name = city.title()
+    city_location = city_info['country'].title()
+    city_population = str(city_info['population'])
+    mountain = city_info['nearby mountains'].title()
+
+    print(city_name + ': \n\t• ' + city_location + '\n\t• ' + city_population + '\n\t• ' + mountain)
