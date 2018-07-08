@@ -151,3 +151,16 @@ for name, places in fav_places.items():
         print("• " + place.title())
 
 
+# 6-10
+
+favorite_numbers = {
+    'jesus': [3, 33, 7],
+    'satan': [666, 56, 5],
+    'pifagor': [3.14, 4, 9.8],
+    'duke nukem': [1000000, 4324, 5656]
+}
+
+for name, numbers in favorite_numbers.items():
+    print(name.title() + ':')
+    print(*numbers)
+
