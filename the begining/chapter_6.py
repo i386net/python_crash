@@ -48,5 +48,21 @@ for key in sorted(test_dict.keys()):
 # print sorted keys
 print(*sorted(test_dict.keys()))
 
-# 6-4
+# 6-6
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python'
+}
+
+users_list = ['michael', 'Jen', 'john', 'edward', 'ken', 'david']
+for user in users_list:
+    if user.lower() in favorite_languages.keys():
+        print('Thank you, ' + user.title() + ', for your participation in this poll!')
+    else:
+        print(user.title() + ", what's your favorite programming language?")
+
+
 
