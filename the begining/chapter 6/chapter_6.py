@@ -139,3 +139,15 @@ for pet in pets:
 
 # 6-9
 
+fav_places = {
+    'john':['m1', 'm2', 'm3'],
+    'mike': ['p1', 'p2', 'p3'],
+    'duke': ['l1', 'l2', 'l3']
+}
+
+for name, places in fav_places.items():
+    print(name.title() + "'s favourite places are: ")
+    for place in places:
+        print("• " + place.title())
+
+
