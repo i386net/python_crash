@@ -98,4 +98,42 @@ for character in dc_chars:
     print('-'*20)
 
 
+# 6-8
+pets = []
+pet = {
+    'animal type': 'dog',
+    'name': 'ball',
+    'owner': 'bart',
+    'weight': 43,
+    'eats': 'bones',
+}
+pets.append(pet)
+pet = {
+    'animal type': 'cat',
+    'name': 'furfur',
+    'owner': 'candy',
+    'weight': 10,
+    'eats': 'fish',
+}
+pets.append(pet)
+
+pet = {
+    'animal type': 'bird',
+    'name': 'mr. crow',
+    'owner': 'john',
+    'weight': 1.5,
+    'eats': 'bugs',
+}
+pets.append(pet)
+
+for pet in pets:
+    message = pet['owner'].title() + " own's '" + pet['name'].title() + "' and this is a " + pet['animal type'] \
+              + ". He's " + str(pet['weight']) + ' kgs and like to eat ' + pet['eats'] + "."
+    print(message)
+    if pet['animal type'] == 'dog':
+       print('Bark-Bark!!! 🐶')
+    elif pet['animal type'] == 'cat':
+        print('Meow-Meow!!! 🐱')
+    else:
+        print('Tweet-Tweet!!! 🐦')
 
