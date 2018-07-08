@@ -65,4 +65,37 @@ for user in users_list:
         print(user.title() + ", what's your favorite programming language?")
 
 
+# 6-7
+
+batman = {
+    'name': 'bruce',
+    'surname': 'wayne',
+    'age': '79',
+    'city': 'gotham city'
+}
+
+superman = {
+    'name': 'clark',
+    'surname': 'kent',
+    'age': '80',
+    'city': 'metropolice'
+}
+
+darkseid = {
+    'name': 'uxas',
+    'surname': '',
+    'age': '245.000 ',
+    'city': 'apokolips'
+}
+
+dc_chars = [batman, superman, darkseid]
+print('-'*20)
+for character in dc_chars:
+    full_name = character['name'] + ' ' + character['surname']
+    print('Name: ' + full_name.title())
+    print('Age: ' + character['age'].title() )
+    print('Location: ' + character['city'].title())
+    print('-'*20)
+
+
 
