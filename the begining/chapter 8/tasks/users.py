@@ -13,7 +13,7 @@ def collect_user_info(n):
 
 # function for printing collected information
 def print_info(users_info):
-    for id, details in users.items():
+    for id, details in users_info.items():
         print('User ID: %d' % id)
         for k,v in details.items():
             print("%s: %s" % (k.upper(), v.capitalize()))
@@ -21,4 +21,4 @@ def print_info(users_info):
 # function for printing number of users
 def print_tottal_users(users_info):
     print('-'*20)
-    print('Total number of users: %d' % len(users.keys()))
+    print('Total number of users: %d' % len(users_info.keys()))
