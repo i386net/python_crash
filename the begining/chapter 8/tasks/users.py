@@ -16,7 +16,7 @@ def print_info(users_info):
     for id, details in users_info.items():
         print('User ID: %d' % id)
         for k,v in details.items():
-            print("%s: %s" % (k.upper(), v.capitalize()))
+            print("%s: %s" % (k.upper(), v))
 
 # function for printing number of users
 def print_tottal_users(users_info):
