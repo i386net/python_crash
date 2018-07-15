@@ -22,3 +22,5 @@ def print_info(users_info):
 def print_tottal_users(users_info):
     print('-'*20)
     print('Total number of users: %d' % len(users_info.keys()))
+    print('-' * 20)
+
