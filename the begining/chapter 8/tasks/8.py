@@ -61,3 +61,17 @@ countries = ['GB', 'France', 'USA']
 for k, v in dict(zip(cities, countries)).items():
     cc = city_country(k, v)
     print(cc)
+
+#8-7
+def album_make(album='Unknown Album', artist='Unknown Artist', tracks=0):
+    if tracks > 0:
+        return {'album': album, 'artist': artist, 'tracks': tracks}
+    else:
+        return {'album': album, 'artist': artist}
+
+a1 = album_make('AAAA', 'BBB', 10)
+b1 = album_make('NNN')
+c1 = album_make()
+print('%s\n%s\n%s ' % (a1, b1, c1))
+
+# 8-8
