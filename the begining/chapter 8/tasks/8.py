@@ -95,7 +95,7 @@ def show_magicians(names):
 
 magicians = ['alice', 'mike', 'ed']
 
-show_magicians(magicians)
+#show_magicians(magicians)
 
 # 8-10
 def make_great(magicians):
@@ -109,7 +109,11 @@ def make_great(magicians):
 
     return magicians
 
-make_great(magicians)
-show_magicians(magicians)
+#make_great(magicians)
+#show_magicians(magicians)
 
 # 8-11
+
+great_mags = make_great(magicians[:])
+show_magicians(magicians)
+show_magicians(great_mags)
