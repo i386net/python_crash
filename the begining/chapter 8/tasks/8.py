@@ -152,3 +152,5 @@ def make_car(maker, model, **car_details):
         car[k] = v
     return car
 
+car = make_car('subaru', 'forester', color='red')
+print(car)
