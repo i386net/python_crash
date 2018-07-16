@@ -86,4 +86,12 @@ while True:
         break
 print(*mus_list)
 
+# 8-9
+def show_magicians(names):
+    for name in names:
+        print(name.title())
+
+names = ['alice', 'mike', 'ed']
+
+show_magicians(names)
 
