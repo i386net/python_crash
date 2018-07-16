@@ -115,5 +115,5 @@ def make_great(magicians):
 # 8-11
 
 great_mags = make_great(magicians[:])
-show_magicians(magicians)
-show_magicians(great_mags)
+#show_magicians(magicians)
+#show_magicians(great_mags)
