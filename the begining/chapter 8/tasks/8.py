@@ -128,6 +128,17 @@ def sandwich(*fillings):
 
 # 8-13
 
+def build_profile(first, last, **user_info):
+    '''buid dict with user info'''
+    profile = {}
+    profile['first_ name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
 
+user_profile = build_profile('bill', 'lubanovic',
+                             occupation='writer', book='introducing python', year=2017)
+print(user_profile)
 
 
