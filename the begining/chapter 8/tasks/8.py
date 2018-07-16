@@ -63,15 +63,27 @@ for k, v in dict(zip(cities, countries)).items():
     print(cc)
 
 #8-7
-def album_make(album='Unknown Album', artist='Unknown Artist', tracks=0):
-    if tracks > 0:
-        return {'album': album, 'artist': artist, 'tracks': tracks}
+def album_make(album, artist, tracks=0):
+    if tracks:
+        return {'album': album.title(), 'artist': artist.title(), 'tracks': tracks}
     else:
         return {'album': album, 'artist': artist}
 
-a1 = album_make('AAAA', 'BBB', 10)
-b1 = album_make('NNN')
-c1 = album_make()
-print('%s\n%s\n%s ' % (a1, b1, c1))
+#a1 = album_make('AAAA', 'BBB', 10)
+#b1 = album_make('NNN')
+#c1 = album_make()
+#print('%s\n%s\n%s ' % (a1, b1, c1))
 
 # 8-8
+mus_list = []
+while True:
+    album = input('Album: ')
+    artist = input('Artist: ')
+    #tracks = input('Tracks: ')
+    music_collection = album_make(album, artist)
+    mus_list.append(music_collection)
+    if input('Next: ').lower() == 'n':
+        break
+print(*mus_list)
+
+
