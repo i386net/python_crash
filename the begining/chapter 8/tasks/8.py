@@ -124,7 +124,9 @@ def sandwich(*fillings):
     for f in fillings:
         print('• %s' % f.title())
 
+s_list = ['apple', 'ham', 'carry']
 #sandwich('apple', 'ham', 'carry')
+sandwich(*s_list)
 
 # 8-13
 
