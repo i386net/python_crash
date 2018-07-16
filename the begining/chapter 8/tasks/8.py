@@ -142,3 +142,13 @@ user_profile = build_profile('bill', 'lubanovic',
 print(user_profile)
 
 # 8-14 (cars function)
+
+def make_car(maker, model, **car_details):
+    car = {
+        'maker':maker,
+        'model': model
+    }
+    for k, v in car_details.items():
+        car[k] = v
+    return car
+
