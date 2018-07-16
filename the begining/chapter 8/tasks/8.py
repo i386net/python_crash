@@ -107,6 +107,9 @@ def make_great(magicians):
     for great_magician in great_magicians:
         magicians.append(great_magician)
 
+    return magicians
+
 make_great(magicians)
 show_magicians(magicians)
 
+# 8-11
