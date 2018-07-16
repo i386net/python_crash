@@ -141,7 +141,4 @@ user_profile = build_profile('bill', 'lubanovic',
                              occupation='writer', book='introducing python', year=2017)
 print(user_profile)
 
-# 8-14
-
-
-
+# 8-14 (cars function)
