@@ -78,6 +78,8 @@ def album_make(album, artist, tracks=0):
 mus_list = []
 while True:
     album = input('Album: ')
+    if album == 'q':
+        break
     artist = input('Artist: ')
     #tracks = input('Tracks: ')
     music_collection = album_make(album, artist)
@@ -91,7 +93,20 @@ def show_magicians(names):
     for name in names:
         print(name.title())
 
-names = ['alice', 'mike', 'ed']
+magicians = ['alice', 'mike', 'ed']
 
-show_magicians(names)
+show_magicians(magicians)
+
+# 8-10
+def make_great(magicians):
+    great_magicians=[]
+    while magicians:
+        magician = magicians.pop() + ' the great!'
+        great_magicians.append(magician)
+
+    for great_magician in great_magicians:
+        magicians.append(great_magician)
+
+make_great(magicians)
+show_magicians(magicians)
 
