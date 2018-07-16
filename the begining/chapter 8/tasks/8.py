@@ -23,11 +23,11 @@ def make_shirt(size='L', text='I love Python'):
     print("T-shirt print: " + text.upper())
 
 
-make_shirt()
+#make_shirt()
 
 # 8-4
 
-make_shirt('S', 'I love C++')
+#make_shirt('S', 'I love C++')
 
 
 # 8-5
@@ -86,7 +86,7 @@ while True:
     mus_list.append(music_collection)
     if input('Next: ').lower() == 'n':
         break
-print(*mus_list)
+#print(*mus_list)
 
 # 8-9
 def show_magicians(names):
@@ -117,3 +117,5 @@ def make_great(magicians):
 great_mags = make_great(magicians[:])
 #show_magicians(magicians)
 #show_magicians(great_mags)
+
+
