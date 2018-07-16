@@ -118,4 +118,12 @@ great_mags = make_great(magicians[:])
 #show_magicians(magicians)
 #show_magicians(great_mags)
 
+# 8-12
+
+def sandwich(*fillings):
+    for f in fillings:
+        print('• %s' % f.title())
+
+#sandwich('apple', 'ham', 'carry')
+
 
